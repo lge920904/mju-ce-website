@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+
+article{
+	font-size:9pt;
+}
+section{
+	
+}
+fieldset{
+	width:600px;
+	height:800px;
+}
+div.label{
+	width:580px;
+	height:40px;
+	padding:3px;
+}
+
+div.label span{
+	display:block;
+	width:100px;
+	height:30px;
+}
+
+input{
+	width:140px;
+}
