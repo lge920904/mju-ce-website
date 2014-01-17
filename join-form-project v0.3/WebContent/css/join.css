@@ -1,0 +1,202 @@
+@CHARSET "UTF-8";
+
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+img {
+	border: none;
+}
+
+html,body,p,h1,h2,h3,h4,h5,h6,menu,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,hr
+	{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fff;
+	font-size: 0.75em;
+	font-family: '돋움', Dotum, AppleGothic, sans-serif;
+}
+
+input,textarea,select,button,table {
+	font-size: 1em;
+}
+
+img,fieldset {
+	border: 0
+}
+
+img,input,select {
+	vertical-align: middle;
+}
+
+ul,ol {
+	list-style: none
+}
+
+em,address,i {
+	font-style: normal
+}
+
+a {
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+a:hover,a:active,a:focus {
+	text-decoration: underline;
+}
+
+button {
+	display: inline-block;
+	overflow: hidden;
+	border: 0;
+	background: none;
+	cursor: pointer
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%
+}
+
+.hide {
+	position: absolute;
+	overflow: hidden;
+	top: -9999px;
+	left: -9999px;
+	width: 0;
+	height: 1px;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -10000px;
+}
+
+caption {
+	visibility: hidden;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+textarea {
+	resize: none;
+	vertical-align: middle;
+}
+
+.cs-join {
+	width: 500px;
+	height: 600px;
+	margin: 0 auto;
+	border: solid 1px #000;
+}
+.cs-join strong{
+	font-size:30pt;
+	text-align: center;
+}
+.cs-join .screen-out{
+	font-size:20pt;
+	text-align: center;
+}
+.cs-join .txt-join {
+	width: 496px;
+	height: 240px;
+	margin: 3px auto;
+	border: solid 1px #000;
+}
+
+.cs-join .join-box {
+	width: 496px;
+	height: 280px;
+	margin: 10px auto;
+	border: solid 1px #000;
+}
+
+.cs-join .join-innerbox {
+	width: 220px;
+	height: 258px;
+	border: solid 1px #000;
+	float: left;
+	padding:5px;
+	margin: 4px 0px 5px 10px;
+}
+
+.cs-join .bg-join {
+	display: inline-block;
+	width: 100%;
+	height:100%;
+	background-position: 0 -240px;
+	vertical-align: top;
+}
+.cs-join .bg-join img{
+	width:100%;
+	height:100%;
+}
+.hidden {
+	display: none;
+}
+.desc-intro {
+	width:480px;
+	height:100px;
+	margin:0 auto;
+}
+.join-form{
+	widhth:508px;
+	height:100%;
+}
+.input-info {
+	width:480px;
+	height:48px;
+	margin:5px auto;
+}
+.input-info input{
+	display: inline;
+	width: 250px;
+	padding: 10px 0px;
+	font-size: 13pt;
+	outline: none;
+
+}
+.input-info .input-txt{
+	display:inline-block;
+	width:200px;
+	padding: 10px 0px;
+	text-indent : 30px;
+	font-size: 15pt;
+	margin-left:10px;
+	outline: none;
+}
+.input-info .btn-certify{
+	display:inline-block;
+	width:200px;
+	padding: 10px 0px;
+	font-size: 13pt;
+	outline: none;
+	float:right;
+	margin-right:30px;
+}
+.input-info .btn-submit{
+	display:inline-block;
+	width:95%;
+	margin:15px 0 0 10px;
+	padding: 10px 0px;
+	font-size: 13pt;
+	outline: none;
+}
+select{
+	width:250px;
+	padding: 10px 0px;
+	display:inline-block;
+	align-items: center;
+	outline: none;
+}
