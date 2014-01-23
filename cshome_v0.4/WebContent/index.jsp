@@ -172,7 +172,7 @@
 							<article>
 								<div class="ct-latest-thumb">
 									<a href="" class="ct-trans"> <img width="75" height="105"
-										src="" class="attachment-thumbnail wp-post-image"
+										src="./resources/img/ai.png" class="attachment-thumbnail wp-post-image"
 										alt="Collective98" />
 									</a>
 								</div>
@@ -189,7 +189,7 @@
 							<article>
 								<div class="ct-latest-thumb">
 									<a href="" class="ct-trans"> <img width="75" height="105"
-										src="" class="attachment-thumbnail wp-post-image"
+										src="./resources/img/nlp.png" class="attachment-thumbnail wp-post-image"
 										alt="Collective 97" />
 									</a>
 								</div>
@@ -226,13 +226,13 @@
 										});
 									</script>
 								<% } %>
-							<form class="login" id="login-form" action="UserInfoServlet?action=login" method="post">
+							<form class="login" id="login-form" action="UserInfoServlet?action=login" method="post" autocomplete="off">
 								<input type="hidden" name="requestUrl" value="<%= request.getRequestURI() %>">
 								<input type="text" name="user-id" placeholder="Email or ID"
 									style="width: 275px; margin: 0"> 
 								<input type="text" name="user-password"
 									placeholder="password" style="width: 185px; margin: 0">
-								<input class="login-submit" name="btn-user-login" type="button" value="로그인">
+								<input class="buttonbig" name="btn-user-login" type="button"  value="로그인">
 							</form>
 							<script>
 							$(function(){
@@ -250,7 +250,9 @@
 								<a href="join.intro.jsp">회원가입 | </a><a href="findmenu.jsp">비밀번호 찾기</a>
 							</p>
 						<% } else {%>
-							<p> <%= user.getName() %>님 반갑습니다.</p>
+							<p>
+								<%= user.getName() %>님 반갑습니다.
+							</p>
 							<p class="ct-subline-login">
 								<a href="modify.do.jsp">정보수정 | </a><a href="logout.jsp?requestUrl=<%=request.getRequestURI()%>">로그아웃</a>
 						<% } %>
@@ -264,7 +266,7 @@
 								<div class="ct-latest-thumb">
 									<a
 										href="http://tympanus.net/codrops/2014/01/07/shape-hover-effect-with-svg/"
-										class="ct-trans"> <img width="105" height="105" />
+										class="ct-trans"> <img src="./resources/img/seoulaccord-notice.png" width="105" height="105" />
 									</a>
 								</div>
 								<h3>
@@ -277,7 +279,7 @@
 								<div class="ct-latest-thumb">
 									<a
 										href="http://tympanus.net/codrops/2014/01/07/shape-hover-effect-with-svg/"
-										class="ct-trans"> <img width="105" height="105" />
+										class="ct-trans"> <img src="./resources/img/department-notice.png"  width="105" height="105" />
 									</a>
 								</div>
 								<h3>
@@ -290,7 +292,7 @@
 								<div class="ct-latest-thumb">
 									<a
 										href="http://tympanus.net/codrops/2014/01/07/shape-hover-effect-with-svg/"
-										class="ct-trans"> <img width="105" height="105" />
+										class="ct-trans"> <img src="./resources/img/society-notice.png"  width="105" height="105" />
 									</a>
 								</div>
 								<h3>
@@ -303,7 +305,7 @@
 								<div class="ct-latest-thumb">
 									<a
 										href="http://tympanus.net/codrops/2014/01/07/shape-hover-effect-with-svg/"
-										class="ct-trans"> <img width="105" height="105" />
+										class="ct-trans"> <img src="./resources/img/society-notice.png"  width="105" height="105" />
 									</a>
 								</div>
 								<h3>
@@ -316,7 +318,7 @@
 								<div class="ct-latest-thumb">
 									<a
 										href="http://tympanus.net/codrops/2014/01/07/shape-hover-effect-with-svg/"
-										class="ct-trans"> <img width="105" height="105" />
+										class="ct-trans"> <img src="./resources/img/seoulaccord-notice.png"  width="105" height="105" />
 									</a>
 								</div>
 								<h3>
@@ -329,7 +331,7 @@
 								<div class="ct-latest-thumb">
 									<a
 										href="http://tympanus.net/codrops/2014/01/07/shape-hover-effect-with-svg/"
-										class="ct-trans"> <img width="105" height="105" />
+										class="ct-trans"> <img src="./resources/img/department-notice.png"  width="105" height="105" />
 									</a>
 								</div>
 								<h3>
@@ -342,7 +344,7 @@
 								<div class="ct-latest-thumb">
 									<a
 										href="http://tympanus.net/codrops/2014/01/07/shape-hover-effect-with-svg/"
-										class="ct-trans"> <img width="105" height="105" />
+										class="ct-trans"> <img src="./resources/img/society-notice.png"  width="105" height="105" />
 									</a>
 								</div>
 								<h3>

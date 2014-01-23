@@ -14,13 +14,13 @@
 						});
 					</script>
 				<% } %>
-			<form class="login" id="login-form" action="UserInfoServlet?action=login" method="post">
+			<form class="login" id="login-form" action="UserInfoServlet?action=login" method="post" autocomplete="off">
 				<input type="hidden" name="requestUrl" value="<%= request.getRequestURI() %>">
 				<input type="text" name="user-id" placeholder="Email or ID"
 					style="width: 275px; margin: 0"> 
 				<input type="text" name="user-password"
 					placeholder="password" style="width: 185px; margin: 0">
-				<input class="login-submit" name="btn-user-login" type="button" value="로그인">
+				<input class="buttonbig" name="btn-user-login" type="button" value="로그인">
 			</form>
 			<script>
 			$(function(){
