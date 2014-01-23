@@ -25,52 +25,31 @@
 }
 
 
-.ct-container .ct-inner-contents .ct-container-nav{
-	width:1000px;
-	height:38px;
-	margin:5px auto 0 auto;
-}
-
-.ct-container .ct-inner-contents .ct-container-nav ul{
-	display:block;
-	margin:0 auto;
-}
-
-.ct-container .ct-inner-contents .ct-container-nav ul li{
-	display:block;
-	width:300px;
-	float:left;
-	margin-right:10px;
-	padding : 8px;
-	background-color:#ff5c00;
-	text-align:center;
-}
 .ct-container .ct-inner-contents .ct-container-nav ul li.current{
 	background-color : #ff5150;	
 }
 .ct-container .ct-inner-contents {
 	width: 1240px;
-	height : 750px;
+	height : 790px;
 	margin: 0 auto;
 	padding : 40px 10px 20px 10px;
 	font-family: NanumBarunGothic;
 	background-color:#fff
 }
 .ct-container .ct-inner-contents .desc-intro {
-	width: 600px;
-	height: 120px;
+	width: 1000px;
+	height: 130px;
 	margin: 0 auto;
 }
 
 .ct-container .ct-inner-contents .desc-intro strong{
 	display : block;
 	text-align : center;
-	text-indent : 20px;
-	font-size: 30pt;
+	font-size: 34pt;
 }
 .ct-container .desc-intro span {
 	display : block;
-	font-size : 13pt;
+	font-size : 15pt;
 	text-align : center;
 	line-height: 25px;
 }
@@ -80,24 +59,23 @@
 }
 
 .ct-inner-contents .join-box {
-	width: 556px;
-	height: 280px;
-	margin: 10px auto 50px auto;
+	width: 800px;
+	height: 400px;
+	margin: 20px auto;
 	padding-left: 15px;
 }
 
 .ct-inner-contents .join-innerbox {
-	width: 230px;
-	height: 260px;
+	width: 350px;
+	height:100%;
 	float: left;
 	text-align: center;
-	margin: 20px;
+	margin: 30px 0 0 40px;
 }
 
 .ct-inner-contents .leftbox {
-	display: block;
-	height: 100%;
-	background-image: url(../resources/img/memberjoin/member.png);
+	background-repeat : no-repeat;
+ 	background-image: url(../resources/join_img/join.intro.left.png); 
 	-webkit-transition: background 0.2s;
 	-moz-transition: background 0.2s;
 	transition: background 0.2s;
@@ -105,20 +83,27 @@
 }
 
 .ct-inner-contents .leftbox:hover{
-	background-image: url(../resources/img/memberjoin/member-hover.png);
+	background-repeat : no-repeat;
+	background-image: url(../resources/join_img/join.intro.left-hover.png);
+		-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	transition: background 0.2s;
 }
 
 .ct-inner-contents .rightbox {
-	display: block;
-	height: 100%;
-	background-image: url(../resources/img/memberjoin/nonmember.png);
+	background-repeat : no-repeat;
+	 background-image: url(../resources/join_img/join.intro.right.png); 
 	-webkit-transition: background 0.2s;
 	-moz-transition: background 0.2s;
 	transition: background 0.2s;
 }
 
 .ct-inner-contents .rightbox:hover{
-	background-image: url(../resources/img/memberjoin/nonmember-hover.png);
+	background-repeat : no-repeat;
+	background-image: url(../resources/join_img/join.intro.right-hover.png);
+		-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	transition: background 0.2s;
 }
 
 .ct-inner-contents .bg-join {
@@ -128,25 +113,47 @@
 	background-position: 0 -240px;
 	vertical-align: top;
 }
+
+.ct-inner-contents .ct-inner-whole{
+	width:100%;
+	height:680px;
+	margin:0 auto;
+}
 .ct-inner-contents .ct-form{
-	width : 590px;
+	width : 600px;
 	margin: 40px auto 0 auto;		
 }
 .ct-inner-contents .ct-inner-left-contents{
-	width:590px;
-	height:100%;
-	margin: 40px 0 0 20px;
-	background-color:#0099cc;
+	width:600px;
+	margin: 30px 30px 0 0;
 	float:left;
+}
+
+.ct-inner-contents .ct-inner-left-contents .left-desc{
+	width:100%;
+	margin : 0 auto;
+}
+.ct-inner-contents .ct-inner-left-contents .left-desc strong{
+	display : block;
+	font-size : 20pt;
+	text-align : center;
+	
+}
+
+.ct-inner-contents .ct-inner-left-contents .left-desc span{
+	display : block;
+	font-size:13pt;
+	text-align:right;
 }
 
 .ct-inner-contents .ct-inner-right-contents {
 	width : 590px;
-	margin: 40px auto 0 auto;		
+	margin: 40px 0 0 0;	
 	float:left;
+	border-left : 2px solid #30abd5;
 }
 .input-info {
-	width: 480px;
+	width: 520px;
 	height: 50px;
 	margin: 10px auto 0 auto;
 }
@@ -159,7 +166,7 @@
 }
 .input-info .input-txt {
 	display: inline-block;
-	width: 180px;
+	width: 200px;
 	padding: 10px 0px;
 	text-indent: 30px;
 	font-size: 13pt;

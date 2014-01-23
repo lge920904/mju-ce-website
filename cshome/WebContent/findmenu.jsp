@@ -18,9 +18,9 @@
 		<div class="desc-intro">
 			<strong>아이디/비밀번호 찾기</strong><br/>
 		</div>
-		<div style="background-color:#fff; height:350px;" class="ct-inner-left-contents" >
-			<form method="post" id="find-id-form" action="javascript:void(0)" style="border-right:solid 3px #0099cc;">
-			<strong style="font-size:20pt; margin-left:40px;">아이디 찾기</strong><span> *등록된 이메일로 아이디가 발송됩니다.</span>
+		<div style= height:350px;" class="ct-inner-left-contents" >
+			<form method="post" id="find-id-form" action="javascript:void(0)">
+			<strong style="font-size:20pt; margin:0 0 0 40px;">아이디 찾기</strong><span> *등록된 이메일로 아이디가 발송됩니다.</span>
 			<div class="input-info">
 				<span class="input-txt">이메일</span><input type="text" name="user-id" style="ime-mode:disabled; text-transform:lowercase;" maxlength="20" class="input-text">
 			</div>
@@ -34,7 +34,7 @@
 			<br/>
 		</form>
 		</div>
-		<div class="ct-inner-right-contents" style="height:350px;">
+		<div class="ct-inner-right-contents" style="height:280px;">
 			<form method="post" id="find-password-form" action="javascript:void(0)">
 				<strong style="font-size:20pt; margin-left:40px;">비밀번호 찾기</strong><span> *등록된 이메일로 임시비밀번호가 발송됩니다.</span>
 				<div class="input-info">

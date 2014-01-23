@@ -14,9 +14,8 @@
 <div class="ct-container">
 	<%@ include file="page/header.jsp" %>	
 	<div class="ct-inner-contents">
-		<div class="desc-intro">
-			<strong>회원가입</strong><br/><br/>
-			<span class="screen-out">Dept. ComputerEngineering</span>
+		<div style="height:300px;" class="desc-intro">
+			<img  style="margin-left:100px;" src="resources/join_img/join.intro.png" >
 		</div>
 		<div class="join-box">
 		<div class="join-innerbox leftbox">
