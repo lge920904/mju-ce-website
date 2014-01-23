@@ -2,6 +2,7 @@
     pageEncoding="UTF-8" import="kr.ac.mju.cs.bean.User"%>
 <%
 User sessionUser = (User)session.getAttribute("sessionUser");
+String requestUrl = request.getParameter("requestUrl");
 %>    
 <!DOCTYPE html>
 <html>
@@ -28,7 +29,7 @@ User sessionUser = (User)session.getAttribute("sessionUser");
 <% session.invalidate(); %>
 </body>
 <script>
-setTimeout("location.href='index.jsp'",10000);
+setTimeout("location.href='<%=requestUrl%>'",10000);
 </script>
 </html>
 

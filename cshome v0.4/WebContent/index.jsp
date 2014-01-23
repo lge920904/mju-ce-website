@@ -14,7 +14,7 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>명지대학교 컴퓨터공학과</title>
+<title>명지대학교</title>
 <link rel="stylesheet" type="text/css" href="css/default.css" />
 <link rel="stylesheet" type="text/css" media="print" href="css/user.css" />
 
@@ -219,6 +219,7 @@
 							User user = (User)session.getAttribute("sessionUser");
 							if(user == null){ %>
 							<form class="login" action="UserInfoServlet?action=login" method="post">
+								<input type="hidden" name="current-url" value="<%= request.getRequestURI() %>">
 								<input type="text" name="user-id" placeholder="Email or ID"
 									style="width: 275px; margin: 0"> <input type="text" name="user-password"
 									placeholder="password" style="width: 185px; margin: 0">

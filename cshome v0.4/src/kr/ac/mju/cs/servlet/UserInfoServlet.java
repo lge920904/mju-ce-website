@@ -70,6 +70,8 @@ public class UserInfoServlet extends HttpServlet {
 		if (action.equals(ACTION.LOGIN.getAction())) {
 			String id = request.getParameter("user-id");
 			String password = request.getParameter("user-password");
+			String requestUrl = request.getParameter("current-url");
+			System.out.println("request url : " + requestUrl);
 			User user = null;
 			HttpSession session = request.getSession();
 			
@@ -95,7 +97,7 @@ public class UserInfoServlet extends HttpServlet {
 					session.setAttribute("sessionUser", nonMember);
 				}
 				System.out.println("login success! " + user.getId());
-				response.sendRedirect("index.jsp");
+				response.sendRedirect(requestUrl);
 				session.setMaxInactiveInterval(MAX_INACTIVE_INTERVAL);
 			}
 		} else if (action.equals(ACTION.FIND_ID.getAction())) {
