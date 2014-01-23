@@ -20,8 +20,11 @@ String requestUrl = request.getParameter("requestUrl");
 			<br/><br/><br/>
 		  <strong>정상적으로 로그아웃 처리되었습니다.</strong><br/>
 		  <strong>'<%= sessionUser.getName() %>'님 안녕히가세요.</strong><br/><br/>
-		  <span>10초 후, 자동으로 화면이 이동됩니다.</span><br/>
+		  <span>5초 후, 자동으로 화면이 이동됩니다.</span><br/>
 		  <span>메인화면으로 이동하시려면 <a href="index.jsp" style="color:red; font-size:13pt;">여기</a>를 클릭하세요.</span><br/>
+		  <div style="margin:50px 0 0 140px;">
+		  	<img src="./resources/img/logout.png">
+		  </div>
 		</div>
 	</div>
 		<%@ include file="page/footer.jsp" %>
@@ -29,7 +32,7 @@ String requestUrl = request.getParameter("requestUrl");
 <% session.invalidate(); %>
 </body>
 <script>
-setTimeout("location.href='<%=requestUrl%>'",10000);
+setTimeout("location.href='<%=requestUrl%>'",5000);
 </script>
 </html>
 
