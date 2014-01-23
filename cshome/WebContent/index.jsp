@@ -141,7 +141,7 @@
 							<h2>학사 - 공학 인증 &amp; 기초 전공</h2>
 							<article>
 								<div class="ct-latest-thumb">
-									<a href="" class="ct-trans"> <img src="img/engineering-authority-educationcenter.png" width="105" height="105" />
+									<a href="" class="ct-trans"> <img src="./resources/img/engineering-authority-educationcenter.png" width="105" height="105" />
 									</a>
 								</div>
 								<h3>
@@ -151,7 +151,7 @@
 							</article>
 							<article>
 								<div class="ct-latest-thumb">
-									<a href="" class="ct-trans"> <img src="img/engineering-authority-road-map.png" width="105" height="105" />
+									<a href="" class="ct-trans"> <img src="./resources/img/engineering-authority-road-map.png" width="105" height="105" />
 									</a>
 								</div>
 
