@@ -1,0 +1,222 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: "NanumBarunGothic";
+	src: url('../fonts/NanumBarunGothic.eot') format('eot');
+	src: url('../fonts/NanumBarunGothic.woff') format('woff');
+}
+
+@font-face {
+	font-family: "NanumBarunGothicBold";
+	src: url('../fonts/NanumBarunGothicBold.eot') format('eot');
+	src: url('../fonts/NanumBarunGothicBold.woff') format('woff');
+}
+
+.hide {
+	position: absolute;
+	overflow: hidden;
+	top: -9999px;
+	left: -9999px;
+	width: 0;
+	height: 1px;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -10000px;
+}
+
+
+.ct-container .ct-inner-contents .ct-container-nav ul li.current{
+	background-color : #ff5150;	
+}
+.ct-container .ct-inner-contents {
+	width: 1240px;
+	height : 790px;
+	margin: 0 auto;
+	padding : 70px 10px 20px 10px;
+	font-family: NanumBarunGothic;
+	background-color:#fff
+}
+.ct-container .ct-inner-contents .desc-intro {
+	width: 1000px;
+	height: 130px;
+	margin: 0 auto;
+}
+
+.ct-container .ct-inner-contents .desc-intro strong{
+	display : block;
+	text-align : center;
+	font-size: 34pt;
+}
+.ct-container .desc-intro span {
+	display : block;
+	font-size : 15pt;
+	text-align : center;
+	line-height: 25px;
+}
+.ct-inner-contents .screen-out {
+	font-size: 20pt;
+	text-align: center;
+}
+
+.ct-inner-contents .join-box {
+	width: 800px;
+	height: 400px;
+	margin: 20px auto;
+	padding-left: 15px;
+}
+
+.ct-inner-contents .join-innerbox {
+	width: 350px;
+	height:100%;
+	float: left;
+	text-align: center;
+	margin: 30px 0 0 40px;
+}
+
+.ct-inner-contents .leftbox {
+	background-repeat : no-repeat;
+ 	background-image: url(../resources/join_img/join.intro.left.png); 
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	transition: background 0.2s;
+
+}
+
+.ct-inner-contents .leftbox:hover{
+	background-repeat : no-repeat;
+	background-image: url(../resources/join_img/join.intro.left-hover.png);
+		-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	transition: background 0.2s;
+}
+
+.ct-inner-contents .rightbox {
+	background-repeat : no-repeat;
+	 background-image: url(../resources/join_img/join.intro.right.png); 
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	transition: background 0.2s;
+}
+
+.ct-inner-contents .rightbox:hover{
+	background-repeat : no-repeat;
+	background-image: url(../resources/join_img/join.intro.right-hover.png);
+		-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	transition: background 0.2s;
+}
+
+.ct-inner-contents .bg-join {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-position: 0 -240px;
+	vertical-align: top;
+}
+
+.ct-inner-contents .ct-inner-whole{
+	width:100%;
+	height:680px;
+	margin:0 auto;
+}
+.ct-inner-contents .ct-form{
+	width : 600px;
+	margin: 40px auto 0 auto;		
+}
+.ct-inner-contents .ct-inner-left-contents{
+	width:600px;
+	margin: 30px 30px 0 0;
+	float:left;
+}
+
+.ct-inner-contents .ct-inner-left-contents .left-desc{
+	width:100%;
+	margin : 0 auto;
+}
+.ct-inner-contents .ct-inner-left-contents .left-desc strong{
+	display : block;
+	font-size : 20pt;
+	text-align : center;
+	
+}
+
+.ct-inner-contents .ct-inner-left-contents .left-desc span{
+	display : block;
+	font-size:13pt;
+	text-align:right;
+}
+
+.ct-inner-contents .ct-inner-right-contents {
+	width : 590px;
+	margin: 40px 0 0 0;	
+	float:left;
+	border-left : 2px solid #30abd5;
+}
+.input-info {
+	width: 520px;
+	height: 50px;
+	margin: 10px auto 0 auto;
+}
+
+.input-info .alert-msg{
+	display: inline-block;
+	font-size : 9pt;
+	float:right;
+	margin : 5px 20px 0 0;
+}
+.input-info .input-txt {
+	display: inline-block;
+	width: 200px;
+	padding: 10px 0px;
+	text-indent: 30px;
+	font-size: 13pt;
+	margin-left: 10px;
+	outline: none;
+}
+.input-info input {
+	display: inline;
+	color:#3a3a3a;
+	background-color:#fff;
+	width: 280px;
+	box-shadow: 0px 3px 3px #F3F4F6 inset;
+	padding: 7px 0px;
+	font-size: 13pt;
+	outline: none;
+	font-family: NanumBarunGothic;
+}
+
+.input-info input:hover, .input-info input:focus{
+	border: solid 1px #5fbdce;
+}
+
+.input-info .btn-certify {
+	width: 140px;
+	font-size: 11pt;
+	outline: none;
+	float: right;
+	margin-right: 30px;
+}
+
+.input-info .btn-submit {
+	display: inline-block;
+	padding: 10px 0px;
+	width : 200px;
+	float : right;
+	font-size: 13pt;
+	margin: 10px 80px 0 0 ;
+	outline: none;
+	
+}
+
+.input-button:hover{
+	background-color: #5fbdce;
+	color: #fff;
+}
+
+select {
+	width: 250px;
+	padding: 10px 0px;
+	display: inline-block;
+	align-items: center;
+	outline: none;
+}

@@ -1,0 +1,60 @@
+/* General Demo Style */
+@font-face {
+	font-family: "NanumBarunGothic";
+	src: url('../fonts/NanumBarunGothic.eot') format('eot');
+	src: url('../fonts/NanumBarunGothic.woff') format('woff');
+}
+
+@font-face {
+	font-family: "NanumBarunGothicBold";
+	src: url('../fonts/NanumBarunGothicBold.eot') format('eot');
+	src: url('../fonts/NanumBarunGothicBold.woff') format('woff');
+}
+
+html{
+	height: 100%;
+}
+body{min-height:100%; font-size: 100%; 	padding: 0; margin: 0;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+    font-family: NanumBarunGothic;
+    color: #47a3da;
+}
+
+.deptinfo-main{
+	min-height: 100%;
+	max-width: 1243px;
+	position: relative;
+	overflow: hidden;
+	margin: 0% auto;
+	padding: 0px 20px;
+}
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
