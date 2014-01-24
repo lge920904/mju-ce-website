@@ -10,8 +10,8 @@
 			<nav class="ct-nav-main">
 				<ul>
 					<li><a href="deptinfo.jsp">학과 소개</a></li>
-					<li><a href="#">대학원 소개</a></li>
-					<li><a href="#">공학 인증</a></li>
+					<li><a href="graduinfo.jsp">대학원 소개</a></li>
+					<li><a href="abeek.jsp">공학 인증</a></li>
 					<li><a href="#">공지 사항</a></li>
 					<li><a href="#">문의 하기</a></li>
 				</ul>

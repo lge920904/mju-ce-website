@@ -24,6 +24,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/default.css">
 	<link rel="stylesheet" type="text/css" href="css/join.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <title>명지대학교 컴퓨터공학과::교수정보수정</title>
 </head>
 <body>

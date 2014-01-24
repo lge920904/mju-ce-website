@@ -13,7 +13,9 @@
 							alert("<%= loginError %>");
 						});
 					</script>
-				<% } %>
+				<% 
+					session.invalidate();
+				} %>
 			<form class="login" id="login-form" action="UserInfoServlet?action=login" method="post" autocomplete="off">
 				<input type="hidden" name="requestUrl" value="<%= request.getRequestURI() %>">
 				<input type="text" name="user-id" placeholder="Email or ID"

@@ -10,6 +10,7 @@ String requestUrl = request.getParameter("requestUrl");
 <title>명지대학교 컴퓨터공학과::로그아웃</title>
 <link rel="stylesheet" href="css/default.css" type="text/css"/>
 <link rel="stylesheet" href="css/join.css" type="text/css"/>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <meta charset="UTF-8">
 </head>
 <body>

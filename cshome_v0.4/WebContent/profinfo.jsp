@@ -27,6 +27,7 @@
 	<link rel="stylesheet" type="text/css" href="css/info/component.css" />
 	<link rel="stylesheet" type="text/css" href="css/info/contentsnav.css" />
 	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <title>명지대학교 컴퓨터공학과::교수소개</title>
 </head>
 <body>
