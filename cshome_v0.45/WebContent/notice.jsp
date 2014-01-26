@@ -29,7 +29,7 @@
 			<%@ include file="page/notice-sidemenu.jsp" %>
 			<div class="info-right">
 				<h1 class="dept-content-title">공지사항</h1>
-				<p><strong>공지사항입니다.</strong><br/>
+				<p><strong>공지사항</strong><br/>
 				
 			</div>
 		</div>
@@ -46,7 +46,7 @@
 			<%@ include file="page/notice-sidemenu.jsp" %>
 			<div class="info-right">
 				<h1 class="dept-content-title">학과 일정</h1>
-				<p><strong>학과 일정입니다.</strong><br/>
+				<p><strong>학과 일정</strong><br/>
 			</div>
 		</div>
 	</div>
