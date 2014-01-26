@@ -20,22 +20,22 @@
 		<%@ include file="page/header.jsp" %>
 	<div class="ct-inner-contents">	
 		<div class="desc-intro">
-			<strong>컴퓨터공학과 회원가입</strong><br/>
+			<strong>명지대학교 컴퓨터공학과 회원가입</strong><br/>
 			<span> 간단한 회원가입으로 명지대 컴퓨터공학과의 다양한 컨텐츠를 이용하실 수 있습니다.</span>
 		</div>
 		<div class="ct-inner-whole">
 			<div class="ct-inner-left-contents">
 					<div class="left-desc">
+						<img src="resources/join_img/frame.PNG"><br/><br/>
 						<strong>미래 인재 양성</strong><br/>
 						<span>모바일, 컴퓨터, 멀티미디어 등 기술의 발전에 의한<br/><br/>
 						변화에 중추적인 역할을 담당할 전문적인 인재,<br/><br/>
 						산업 현장에서 바로 활용할 수 있는 인재를 양성하고 있습니다.<br/><br/></span>
-						<img src="resources/join_img/frame.PNG">
 						<br/><br/>
 						<strong>성공을 위한 발판</strong><br/>
 						<span>좋은 환경과 좋은 교수님들이 계신 컴퓨터공학과,<br/><br/>
 						당신의 재능을 이 곳에서 펼칠 수 있도록 <br/><br/>
-						당신의 발판이 되겠습니다.<br/><br/></span><br/>
+						당신의 발판이 되겠습니다.<br/><br/></span><br/><br/>
 						<strong>열정이 있는 명지대학교 <b>컴퓨터공학과</b>입니다.<br/></strong>
 					</div>
 			</div>
@@ -69,8 +69,8 @@
 						</div>
 						<% if(isMember){ %>
 						<div class="input-info">
-							<span class="input-txt">이메일</span><input type="text" placeholder="ex)abcd1234@mju.ac.kr" style="ime-mode:disabled; text-transform:lowercase;" name="user-member-email" >
-							<span class="alert-msg">반드시 '@mju.ac.kr'주소를 이용하세요.</span>
+							<span class="input-txt">이메일</span><input type="text" placeholder="ex)abcd1234" style="ime-mode:disabled; text-transform:lowercase;" name="user-member-email" >
+							<span class="alert-msg">명지대 이메일의 아이디만 입력하세요.</span>
 						</div>
 						<div class="input-info">
 							<input type="button" class="btn-certify" id="btn-member-email-certify" value="이메일인증">

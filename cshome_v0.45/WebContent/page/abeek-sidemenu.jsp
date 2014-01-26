@@ -22,9 +22,9 @@
 			<form class="login" id="login-form" action="UserInfoServlet?action=login" method="post" autocomplete="off">
 				<input type="hidden" name="requestUrl" value="<%= request.getRequestURI()%>?sub=<%=sub%>">
 				<input type="text" name="user-id" placeholder="Email or ID"
-					style="width: 95%; margin: 0"> 
+					style="width: 260px; margin: 0"> 
 				<input type="text" name="user-password"
-					placeholder="password" style="width: 64%; margin: 0">
+					placeholder="password" style="width: 170px; margin: 0">
 				<input class="buttonbig" name="btn-user-login" type="button" value="로그인">
 			</form>
 			<script>

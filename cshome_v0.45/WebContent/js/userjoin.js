@@ -55,7 +55,7 @@ $(function(){
 		if($('input[name=user-member-email]').val().length > 6){
 			$.post('UserJoinServlet',{
 				action : "isMemberEmail",
-				email : $('input[name=user-member-email]').val(),
+				email : $('input[name=user-member-email]').val()+"@mju.ac.kr",
 				name : $('input[name=user-member-name]').val()
 			},function(data){
 				if(data){
@@ -90,11 +90,6 @@ $(function(){
 				}
 			});
 		}
-	});
-	
-	/* member이메일에 @mju.ac.kr 자동생성 */
-	$('input[name=user-member-email]').focus(function(){
-		$('input[name=user-member-email]').val("@mju.ac.kr");
 	});
 	
 	$('#btn-member-join').click(function(){

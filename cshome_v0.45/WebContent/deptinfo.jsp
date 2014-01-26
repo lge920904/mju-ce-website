@@ -7,11 +7,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="css/info/default.css" />
 	<link rel="stylesheet" type="text/css" href="css/info/component.css" />
 	<link rel="stylesheet" type="text/css" href="css/info/contentsnav.css" />
 	<link rel="stylesheet" type="text/css" href="css/default.css" />
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCd-0g6kwobSCLrmksTerMiBmWcA4Qbbcw&sensor=true"></script>
+	<script>
+		function initialize(){
+			var mjuLating = new google.maps.LatLng(37.221999, 127.187690);
+			var mjuOptions = {
+				zoom: 17,
+				center: mjuLating,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById("map_canvas"), mjuOptions);
+			var marker = new google.maps.Marker({
+				position: mjuLating,
+				map: map,
+				title: "컴퓨터공학과"
+			});
+		}
+		window.onload=function(){
+			initialize();
+		}
+	</script>
 <title>명지대학교 컴퓨터공학과::학과소개</title>
 </head>
 <body>
@@ -19,12 +38,12 @@
 	<%@ include file="page/header.jsp" %>
 	<% if(sub.equals("outline")){ %>
 	<div class="deptinfo-main">
-		<nav class="contents-nav">
-			<ul>
-				<li><a href="index.jsp"><img src="resources/img/info/navhome.png"></a></li>
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
 				<li><a href="#">학과소개</a></li>
 			</ul>
-		</nav>
+		</div>
 		<div class="info-main">
 			<%@ include file="page/dept-sidemenu.jsp" %>
 			   <div class="info-right">
@@ -88,13 +107,13 @@
 		}
 	%>
 	<div class="deptinfo-main">
-		<nav class="contents-nav">
-			<ul>
-				<li><a href="index.jsp"><img src="resources/img/info/navhome.png"></a></li>
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
 				<li><a href="deptinfo.jsp">학과소개</a></li>
 				<li><a href="#">교수소개</a></li>
 			</ul>
-		</nav>
+		</div>
 		<div class="info-main">
 			<%@ include file="page/dept-sidemenu.jsp" %>
 			<div class="info-right">
@@ -126,13 +145,13 @@
 	</div>
 	<% }else if(sub.equals("education")){ %>
 	<div class="deptinfo-main">
-		<nav class="contents-nav">
-			<ul>
-				<li><a href="index.jsp"><img src="resources/img/info/navhome.png"></a></li>
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
 				<li><a href="deptinfo.jsp">학과소개</a></li>
 				<li><a href="#">교육목표</a></li>
 			</ul>
-		</nav>
+		</div>
 		<div class="info-main">
 			<%@ include file="page/dept-sidemenu.jsp" %>
 			<div class="info-right">
@@ -143,7 +162,7 @@
 				<section class="edu-info-content">
 					<h1 class="content-title">교육 목표 1 : 전공기초</h1>
 						<span>수학, 기초과학 및 컴퓨터 공학의 기본원리를 이해하고 응용할 수 있는 능력을 갖추도록 한다.</span>
-						<ul class="prof-more-list">
+						<ul class="edu-info-list">
 							<li>기초활용 : 수학, 기초과학 등을 업무와 관련한 문제에 활용할 수 있는 능력</li>
 							<li>문제해결 : C, C++, C#, Java 등을 사용하여 주어진 문제를 해결할 수 있는 능력</li>
 						</ul>
@@ -151,7 +170,7 @@
 				<section class="edu-info-content">
 					<h1 class="content-title">교육 목표 2 : 전공실무</h1>
 						<span>실세계의 컴퓨터공학 문제들을 분석, 설계, 구현하고 이를 관리 운영하는 능력을 갖도록 한다</span>
-						<ul class="prof-more-list">
+						<ul class="edu-info-list">
 							<li>분석설계 : DBMS, UML, IDE 또는 기타 최신의 도구들을 사용하여 컴퓨터공학 문제를 분석/설계하는 능력</li>
 							<li>실무능력 : 설계된 컴퓨터 시스템을 Visual Studio .NET, MATLAB 또는 기타 최신의 도구를 사용하여 정확하게 구현하고, 테스트하고, 운영 중 발생하는 문제를 해결하는 능력</li>
 						</ul>
@@ -159,7 +178,7 @@
 				<section class="edu-info-content">
 					<h1 class="content-title">교육 목표 3 : 직업정신</h1>
 						<span>원활한 의사소통, 협동 능력 및 리더쉽을 기반으로, 컴퓨터기술이 사회, 경제, 윤리에 미치는 영향력에 대한 이해와 새로운 기술에 대한 지속적 탐구 정신을 통해 컴퓨터 엔지니어로서의 직업정신을 갖도록 한다.</span>
-						<ul class="prof-more-list">
+						<ul class="edu-info-list">
 							<li>화합능력 : 구성원들 간에 원활한 의사소통을 통하여 협동적으로 업무를 처리하는 능력</li>
 							<li>산업이해 : XML, Sensor Network 또는 기타 최신의 컴퓨터기술의 발전이 기업과 산업에 미치는 영향력에 대한 충분한 이해</li>
 						</ul>
@@ -167,7 +186,7 @@
 				<section class="edu-info-content last">
 					<h1 class="content-title">교육 목표 4 : 국제경쟁력</h1>
 						<span>외국어 능력, 세계 문화 이해 및 컴퓨터공학 국제 표준 이해를 통해 국제적 경쟁력을 갖도록 한다.</span>
-						<ul class="prof-more-list">
+						<ul class="edu-info-list">
 							<li>국제소통 : 영어 등의 외국어를 사용하여 외국인과 업무를 처리할 수 있는 능력</li>
 							<li>국제역량 : 영어 등의 외국어로 된 컴퓨터 분야의 신기술 관련 서류 및 표준안 등을 이해할 수 있는 능력</li>
 						</ul>
@@ -177,18 +196,25 @@
 	</div>
 	<% }else if(sub.equals("location")){ %>
 	<div class="deptinfo-main">
-		<nav class="contents-nav">
-			<ul>
-				<li><a href="index.jsp"><img src="resources/img/info/navhome.png"></a></li>
-				<li><a href="deptinfo.jsp">학과소개</a></li>
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="#">학과소개</a></li>
 				<li><a href="#">찾아오시는 길</a></li>
 			</ul>
-		</nav>
+		</div>
 		<div class="info-main">
 			<%@ include file="page/dept-sidemenu.jsp" %>
 			<div class="info-right">
 				<h1 class="content-title">찾아오시는 길</h1>
-				<img class="location-img" src="resources/img/info/waymap/img_trap1.png"></br>
+<!-- 				<img class="location-img" src="resources/img/info/waymap/img_trap1.png"></br> -->
+				<div id="map_canvas"></div>
+				<ul class="location-info">
+					<li>주소 : 경기도 용인시 처인구 명지로 116</li>
+					<li>학과사무실 : 제5공학관 5351호</li>
+					<li>교수실 및 연구실 : 제5공학관 6,7층</li>
+					<li>강의실 : 제5공학관 4층</li>
+				</ul>
 				<h1 class="content-title">길안내(주요거점)</h1>
 				<img class="location-img" src="resources/img/info/waymap/way_map1_01.png">
 				<img class="location-img" src="resources/img/info/waymap/way_map1_02.png">

@@ -8,7 +8,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="css/info/default.css" />
 	<link rel="stylesheet" type="text/css" href="css/info/component.css" />
 	<link rel="stylesheet" type="text/css" href="css/info/contentsnav.css" />
 	<link rel="stylesheet" type="text/css" href="css/default.css" />
@@ -20,18 +19,34 @@
 	<%@ include file="page/header.jsp" %>
 	<% if(sub.equals("outline")){ %>
 	<div class="deptinfo-main">
-		<nav class="contents-nav">
-			<ul>
-				<li><a href="index.jsp"><img src="resources/img/info/navhome.png"></a></li>
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
 				<li><a href="#">공지사항</a></li>
 			</ul>
-		</nav>
+		</div>
 		<div class="info-main">
 			<%@ include file="page/notice-sidemenu.jsp" %>
 			<div class="info-right">
 				<h1 class="dept-content-title">공지사항</h1>
 				<p><strong>공지사항입니다.</strong><br/>
 				
+			</div>
+		</div>
+	</div>
+	<% } else if(sub.equals("schedule")){%>
+	<div class="deptinfo-main">
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="#">학과 일정</a></li>
+			</ul>
+		</div>
+		<div class="info-main">
+			<%@ include file="page/notice-sidemenu.jsp" %>
+			<div class="info-right">
+				<h1 class="dept-content-title">학과 일정</h1>
+				<p><strong>학과 일정입니다.</strong><br/>
 			</div>
 		</div>
 	</div>

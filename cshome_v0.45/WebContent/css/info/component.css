@@ -10,48 +10,14 @@
 	src: url('../fonts/NanumBarunGothicBold.woff') format('woff');
 }
 
-/* Needed for a fluid height: */
-
-/* .contents-nav{ */
-/* 	width: 73%; */
-/* 	float: right; */
-/* } */
-
-/* .contents-nav ul{ */
-/* 	font-family: NanumBarunGothic; */
-/* 	float: left; */
-/* 	display: block; */
-/* } */
-
-/* .contents-nav ul li{ */
-/* 	display: inline; */
-/* 	color: #111; */
-/* 	font-size: 13px; */
-/* } */
-
-/* .contents-nav ul li a{ */
-/* 	margin: 0 8px 0 6px; */
-/* 	font-size: 13px; */
-/* 	text-transform: uppercase; */
-/* 	color: #0d77b6; */
-/* } */
-
-/* .contents-nav ul li a:hover { */
-/* 	color: #056495; */
-/* } */
-
-/* .contents-nav ul li:after { */
-/* 	content: "▶"; */
-/* 	font-size: 13px; */
-/* } */
-
-/* .contents-nav ul li:last-child:after { */
-/* 	content: ""; */
-/* } */
-
-/* .contents-nav ul li a { */
-/* 	white-space: nowrap; */
-/* } */
+.deptinfo-main{
+	min-height: 100%;
+	max-width: 1243px;
+	position: relative;
+	overflow: hidden;
+	margin: 0% auto;
+	padding: 0px 20px;
+}
 
 .ct-sidemenu-ads {
 	width: auto;
@@ -231,37 +197,53 @@
 }
 
 .info-right table {
-	width:700px;
+	width:780px;
+	height:200px;
+	margin: 0 auto 100px auto ;
 	font-family: NanumBarunGothic;
 	font-size:10pt;
-}
-
-.info-right table tr.hori-tr{
-	height:130px;
+	border:solid 1px #63add0;
 }
 
 .info-right table tr.verti-tr{
-	height:40px;
+	background-color:#63add0;
 }
 .info-right table td{
+	padding:10px;
 	text-align:center;
 	line-height: 20px;
-	text-overflow: ellipsis; 
+	text-overflow: ellipsis;
+	border-right: 1px dotted #888;
+	overflow : hidden; 
+}
+
+.info-right table td.td-last{
+	border:none;
+}
+
+.info-right table td ul{
+	
+}
+
+.info-right table .ul-last{
+	border: none;
 }
 
 .info-right table td.table-title{
+	padding:2%;
+	height:30px;
 	width:300px;
-	background-color:#00aacc;
+	font-family: NanumBarunGothicBold;
+	font-size:12pt;
 }
 
 
 .dept-content-title{
-	font-family: NanumBarunGothic;
-	font-size: 30pt;
+	font-family: NanumBarunGothicBold;
+	font-size: 25pt;
 	font-weight: normal;
 	color: #47a;
 	position: relative;
-	line-height: 40px;
 	padding: 2% 0 0 2%;
 	margin-top: 2%;
 }
@@ -269,12 +251,11 @@
 .content-title{
 	float: left;
 	width: 80%;
-	font-family: NanumBarunGothic;
-	font-size: 30pt;
+	font-family: NanumBarunGothicBold;
+	font-size: 25pt;
 	font-weight: normal;
 	color: #47a;
 	position: relative;
-	line-height: 40px;
 	margin-top:2%;
 	padding: 2%;
 }
@@ -313,6 +294,17 @@
    float: right;
    width: 200px;
    margin-left: 20px;
+}
+
+.dept-info-contents {
+	margin: 2%;
+	float: left;
+	width: 100%;
+	font-family: NanumBarunGothic;
+	color: #47a3da;
+	font-weight: 300;
+	padding: 0 4%;
+	list-style: disc;
 }
 
 .dept-info-contents li{
@@ -431,6 +423,20 @@
 	color: #111;
 }
 
+.edu-info-list{
+	float: left;
+	padding-left: 4%;
+	list-style: disc;
+	font-size: 11pt;
+}
+
+.edu-info-list > li{
+	font-family: NanumBarunGothic;
+	margin : 5px 10px;
+	color: #111;
+	line-height: 160%;
+	font-size: 11pt
+}
 
 .btn-modify{
 	display: inline-block;
@@ -459,7 +465,8 @@
 	height: auto;
 	overflow: hidden;
 /* 	border-bottom: 1px solid #888; */
-	padding-bottom: 3%;
+	padding: 0 3% 3% 0%;
+	box-shadow: 5px 5px 5px #888;
 }
 
 .info-right .last{
@@ -470,11 +477,27 @@
 	float: left;
 	font-family: NanumBarunGothicBold;
 	margin : 5px 10px;
-	line-height: 200%;
-	text-indent: 11px;
 	color: #111;
-	font-size: 16pt;
+	font-size: 13pt;
 	padding: 0% 2%;
+	line-height: 160%;
+}
+
+#map_canvas{
+	width: 90%;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.location-info{
+	float: left;
+	padding-left: 6%;
+	list-style: disc;
+	font-family: NanumBarunGothic;
+	margin: 5px 10px;
+	color: #111;
+	line-height: 160%;
+	font-size: 13pt;
 }
 
 @media screen and (max-width: 1124px) {

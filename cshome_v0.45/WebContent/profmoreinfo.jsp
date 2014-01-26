@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-   <%@ page import= "kr.ac.mju.cs.bean.Professor" %>
+    <%@ page import= "kr.ac.mju.cs.bean.Professor" %>
 	<%@ page import= "kr.ac.mju.cs.bean.User" %>
 	<%@ page import= "kr.ac.mju.cs.controller.ProfInfoController" %>
 	<%@ page import= "java.util.ArrayList" %>
@@ -25,11 +25,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/info/contentsnav.css" />
 	<link rel="stylesheet" type="text/css" href="css/info/default.css" />
 	<link rel="stylesheet" type="text/css" href="css/info/component.css" />
-	<link rel="stylesheet" type="text/css" href="css/info/contentsnav.css" />
-	<link rel="stylesheet" type="text/css" href="css/default.css" />
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <title>명지대학교 컴퓨터공학과::교수소개</title>
 </head>
 <body>
@@ -40,7 +39,7 @@
 			<ul>
 				<li><a href="index.jsp"><img src="resources/img/info/navhome.png"></a></li>
 				<li><a href="deptinfo.jsp">학과소개</a></li>
-				<li><a href="profinfo.jsp">교수소개</a></li>
+				<li><a href="ProfessorInfoServlet">교수소개</a></li>
 				<li><a href="#"><%=name %></a></li>
 			</ul>
 		</nav>
@@ -57,51 +56,62 @@
 				}%>
 				<section class="prof-more-main">
 					<article class="prof-more-contents">
-						<h3>Cho Sehyeong</h3>
-						<span>교수실 : 제5공학관 5607호</span>
-						<span>전화 : 031-330-6779</span>
-						<span>Comment : test</span>
+						<h3>기본 정보</h3>
+						<ul class="prof-more-list">
+							<li>Cho Sehyeong</li>
+							<li>교수실 : 제5공학관 5607호</li>
+							<li>전화 : 031-330-6779</li>
+							<li>Comment : test</li>
+						</ul>
 					</article>
 					<img alt="" src="resources/img/prof/<%=imgfile%>.png">
 				</section>
 				<section class="prof-more-main">
 					<article class="prof-more-contents">
 						<h3>관심 분야</h3>
-						<span>자연어처리</span>
-						<span>정보 검색 응용</span>
-						<span>기초 프로그래밍 교육 방법론</span>
-						<span>Ontology를 이용한 Automatic Semantic Annotation</span>
-						<span>Automated Planning</span>
-						<span>Ontology-aided Software Generation</span>
-						<span>연구실 : Intelligent Interface(지능형인터페이스 제5공학관 5642호)</span>
+						<ul class="prof-more-list">
+							<li>자연어처리</li>
+							<li>정보 검색 응용</li>
+							<li>기초 프로그래밍 교육 방법론</li>
+							<li>Ontology를 이용한 Automatic Semantic Annotation</li>
+							<li>Automated Planning</li>
+							<li>Ontology-aided Software Generation</li>
+							<li>연구실 : Intelligent Interface(지능형인터페이스 제5공학관 5642호)</li>
+						</ul>
 					</article>
 				</section>
 				<section class="prof-more-main">
 					<article class="prof-more-contents">
 						<h3>경력</h3>
-						<span>1983. 금성통신(현 LG정보통신) 연구원</span>
-						<span>1984.3.~2002.2. 한국전자통신 연구원(ETRI) 개발실장</span>
-						<span>2000.3. 명지대학교 조교수</span>
-						<span>2004.3. 명지대학교 부교수</span>
-						<span>2009.3. 명지대학교 교수</span>
+						<ul class="prof-more-list">
+							<li>1983. 금성통신(현 LG정보통신) 연구원</li>
+							<li>1984.3.~2002.2. 한국전자통신 연구원(ETRI) 개발실장</li>
+							<li>2000.3. 명지대학교 조교수</li>
+							<li>2004.3. 명지대학교 부교수</li>
+							<li>2009.3. 명지대학교 교수</li>
+						</ul>
 					</article>
 				</section>
 				<section class="prof-more-main">
 					<article class="prof-more-contents">
 						<h3>학력</h3>
-						<span>1981. 서울대학교 섬유공학과 학사</span>
-						<span>1983. 서울대학교 계산통계학과 석사</span>
-						<span>1992. Pennsylvania State University 박사</span>
+						<ul class="prof-more-list">
+							<li>1981. 서울대학교 섬유공학과 학사</li>
+							<li>1983. 서울대학교 계산통계학과 석사</li>
+							<li>1992. Pennsylvania State University 박사</li>
+						</ul>
 					</article>
 				</section>
 				<section class="prof-more-main">
 					<article class="prof-more-contents">
 						<h3>최근 연구</h3>
-						<span>2011.6. 명지대학교 컴퓨터공학 교육혁신</span>
-						<span>2012.3. 명지대학교 컴퓨터공학 교육혁신</span>
-						<span>2013.4. 명지대학교 컴퓨터공학 교육혁신</span>
-						<span>2013.8. 워드넷 기반의 단어 중의성 해소 프레임워크</span>
-						<span>2013.11. 워드넷 특징을 이용한 온톨로지 기반 개체명 인식 시스템</span>
+						<ul class="prof-more-list">
+							<li>2011.6. 명지대학교 컴퓨터공학 교육혁신</li>
+							<li>2012.3. 명지대학교 컴퓨터공학 교육혁신</li>
+							<li>2013.4. 명지대학교 컴퓨터공학 교육혁신</li>
+							<li>2013.8. 워드넷 기반의 단어 중의성 해소 프레임워크</li>
+							<li>2013.11. 워드넷 특징을 이용한 온톨로지 기반 개체명 인식 시스템</li>
+						</ul>
 					</article>
 				</section>
 			</div>

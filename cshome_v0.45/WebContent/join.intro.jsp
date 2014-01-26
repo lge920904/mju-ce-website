@@ -14,8 +14,8 @@
 <div class="ct-container">
 	<%@ include file="page/header.jsp" %>	
 	<div class="ct-inner-contents">
-		<div style="height:300px;" class="desc-intro">
-			<img  style="margin-left:100px;" src="resources/join_img/join.intro.png" >
+		<div style="height:320px;" class="desc-intro">
+			<img src="resources/join_img/join.intro.png" >
 		</div>
 		<div class="join-box">
 		<div class="join-innerbox leftbox">

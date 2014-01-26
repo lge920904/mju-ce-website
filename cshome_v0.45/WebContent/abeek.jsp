@@ -7,7 +7,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="css/info/default.css" />
 	<link rel="stylesheet" type="text/css" href="css/info/component.css" />
 	<link rel="stylesheet" type="text/css" href="css/info/contentsnav.css" />
 	<link rel="stylesheet" type="text/css" href="css/default.css" />
@@ -19,12 +18,13 @@
 	<%@ include file="page/header.jsp" %>
 	<% if(sub.equals("outline")){ %>
 	<div class="deptinfo-main">
-		<nav class="contents-nav">
-			<ul>
-				<li><a href="index.jsp"><img src="resources/img/info/navhome.png"></a></li>
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="#">공학인증</a></li>
 				<li><a href="#">개요</a></li>
 			</ul>
-		</nav>
+		</div>
 		<div class="info-main">
 			<%@ include file="page/abeek-sidemenu.jsp" %>
 			<div class="info-right">
@@ -52,12 +52,13 @@
 	</div>
 	<%} else if(sub.equals("benefit")){ %>
 	<div class="deptinfo-main">
-		<nav class="contents-nav">
-			<ul>
-				<li><a href="index.jsp"><img src="resources/img/info/navhome.png"></a></li>
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="#">공학인증</a></li>
 				<li><a href="#">도입목적 및 인증헤택</a></li>
 			</ul>
-		</nav>
+		</div>
 		<div class="info-main">
 			<%@ include file="page/abeek-sidemenu.jsp" %>
 			<div class="info-right">
@@ -88,20 +89,32 @@
 	</div>
 	<%} else if(sub.equals("standard")){ %>
 	<div class="deptinfo-main">
-		<nav class="contents-nav">
-			<ul>
-				<li><a href="index.jsp"><img src="resources/img/info/navhome.png"></a></li>
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="#">공학인증</a></li>
 				<li><a href="#">인증기준</a></li>
 			</ul>
-		</nav>
+		</div	>
 		<div class="info-main">
 			<%@ include file="page/abeek-sidemenu.jsp" %>
 			<div class="info-right">
 				<h1 class="dept-content-title">인증기준</h1>
 				<p><strong>EAC 해당사항</strong><br/>
-					<table border="1">
-						<tr class="hori-tr">
+					<table>
+						<tr class="verti-tr">
 							<td class="table-title">2010년도 인증평가에 적용</td>
+							<td class="table-title">2011년도 인증평가에 적용</td>
+							<td class="table-title">2012년도 인증평가에 적용</td>
+						</tr>
+						<tr>
+							<td>
+								<ul>
+								<li><a href="#" > 공학인증기준2000(KEC2000)</a></li>
+								<li><a href="#">공학인증기준2005(KEC2005)</a></li>
+								<li><a href="#">공학인증기준 설명서2005(KEC2005)</a></li>
+								</ul>
+							</td>
 							<td>
 								<ul>
 								<li><a href="#"> 공학인증기준2000(KEC2000)</a></li>
@@ -109,11 +122,8 @@
 								<li><a href="#">공학인증기준 설명서2005(KEC2005)</a></li>
 								</ul>
 							</td>
-						</tr>
-						<tr class="hori-tr">
-							<td class="table-title">2011년도 인증평가에 적용</td>
-							<td>
-								<ul>
+							<td class="td-last">
+								<ul class="ul-last">
 								<li><a href="#"> 공학인증기준2000(KEC2000)</a></li>
 								<li><a href="#">공학인증기준2005(KEC2005)</a></li>
 								<li><a href="#">공학인증기준 설명서2005(KEC2005)</a></li>
@@ -123,49 +133,64 @@
 					</table>
 				</p>
 				<p><strong>CAC 해당사항</strong><br/>
-					<table border="1">
-						<tr class="hori-tr">
+					<table>
+						<tr class="verti-tr">
 							<td class="table-title">2010년도 인증평가에 적용</td>
+							<td class="table-title">2011년도 인증평가에 적용</td>
+							<td class="table-title">2012년도 인증평가에 적용</td>
+						</tr>
+						<tr>
 							<td>
 								<ul>
 								<li><a href="#">컴퓨터정보기술인증기준(CAC)</a></li>
-								<li><a href="#"> 컴퓨터정보기술인증기준 설명서(CAC)</a></li>
+								<li><a href="#">컴퓨터정보기술인증기준 설명서(CAC)</a></li>
 								<li><a href="#">컴퓨터정보기술인증기준2005(KCC2005)</a></li>
 								<li><a href="#">컴퓨터정보기술인증기준설명서(KCC2005)</a></li>
 								</ul>
 							</td>
-						</tr>
-						<tr class="hori-tr">
-							<td class="table-title">2011년도 인증평가에 적용</td>
 							<td>
 								<ul>
-								<li><a href="#"> 컴퓨터정보기술인증기준(CAC)</a></li>
-								<li><a href="#"> 컴퓨터정보기술인증기준 설명서(CAC)</a></li>
+								<li><a href="#">컴퓨터정보기술인증기준(CAC)</a></li>
+								<li><a href="#">컴퓨터정보기술인증기준 설명서(CAC)</a></li>
 								<li><a href="#">컴퓨터정보기술인증기준2005(KCC2005)</a></li>
 								<li><a href="#">컴퓨터정보기술인증기준설명서(KCC2005)</a></li>
 								<li><a href="#">컴퓨터정보기술인증기준설명서(KCC2010)</a></li>
+								</ul>
+							</td>
+							<td class="td-last">
+								<ul class="ul-last">
+								<li><a href="#">컴퓨터정보기술인증기준2005(KCC2005)</a></li>
+								<li><a href="#">컴퓨터정보기술인증기준2010(KCC2010)</a></li>
+								<li><a href="#">컴퓨터정보기술인증기준 설명서2005(KCC2005)</a></li>
 								</ul>
 							</td>
 						</tr>
 					</table>
 				</p>
 				<p><strong>TAC 해당사항</strong><br/>
-					<table border="1">
-						<tr class="hori-tr">
+					<table>
+						<tr class="verti-tr">
 							<td class="table-title">2010년도 인증평가에 적용</td>
+							<td class="table-title">2011년도 인증평가에 적용</td>
+							<td class="table-title">2012년도 인증평가에 적용</td>
+						</tr>
+						<tr>
 							<td>
 								<ul>
-								<li><a href="#"> 공학기술교육인증기준(KTC2009)</a></li>
-								<li><a href="#">  공학기술교육인증기준설명서(KTC2009)</a></li>
+								<li><a href="#">공학기술교육인증기준(KTC2009))</a></li>
+								<li><a href="#">공학기술교육인증기준 설명서(KTC2009)</a></li>
 								</ul>
 							</td>
-						</tr>
-						<tr class="hori-tr">
-							<td class="table-title">2011년도 인증평가에 적용</td>
 							<td>
 								<ul>
-								<li><a href="#"> 공학기술교육인증기준(KTC2009)</a></li>
-								<li><a href="#">  공학기술교육인증기준설명서(KTC2009)</a></li>
+								<li><a href="#">공학기술교육인증기준(KTC2009))</a></li>
+								<li><a href="#">공학기술교육인증기준 설명서(KTC2009)</a></li>
+								</ul>
+							</td>
+							<td class="td-last">
+								<ul class="ul-last">
+								<li><a href="#">공학기술교육인증기준(KTC2009))</a></li>
+								<li><a href="#">공학기술교육인증기준 설명서(KTC2009)</a></li>
 								</ul>
 							</td>
 						</tr>

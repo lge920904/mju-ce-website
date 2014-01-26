@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="kr.ac.mju.cs.bean.User"%>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+ <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type='text/javascript' src='js/userscripts.js?ver=3.7.1'></script>
 <script type='text/javascript' src='js/jquery.js?ver=1.10.2'></script>
 <script type='text/javascript' src='js/jquery-migrate.min.js?ver=1.2.1'></script>
@@ -19,12 +19,12 @@
 						});
 					</script>
 				<% } %>
-			<form class="login" id="login-form" action="UserInfoServlet?action=login" method="post" autocomplete="off">
+		<form class="login" id="login-form" action="UserInfoServlet?action=login" method="post" autocomplete="off">
 				<input type="hidden" name="requestUrl" value="<%= request.getRequestURI()%>?sub=<%=sub%>">
 				<input type="text" name="user-id" placeholder="Email or ID"
-					style="width: 95%; margin: 0"> 
+					style="width: 260px; margin: 0"> 
 				<input type="text" name="user-password"
-					placeholder="password" style="width: 64%; margin: 0">
+					placeholder="password" style="width: 170px; margin: 0">
 				<input class="buttonbig" name="btn-user-login" type="button" value="로그인">
 			</form>
 			<script>

@@ -8,7 +8,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="css/info/default.css" />
 	<link rel="stylesheet" type="text/css" href="css/info/component.css" />
 	<link rel="stylesheet" type="text/css" href="css/info/contentsnav.css" />
 	<link rel="stylesheet" type="text/css" href="css/default.css" />
@@ -20,12 +19,13 @@
 	<%@ include file="page/header.jsp" %>
 	<% if(sub.equals("outline")){ %>
 	<div class="deptinfo-main">
-		<nav class="contents-nav">
-			<ul>
-				<li><a href="index.jsp"><img src="resources/img/info/navhome.png"></a></li>
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="#">대학원 소개</a></li>
 				<li><a href="#">학과내규</a></li>
 			</ul>
-		</nav>
+		</div>
 		<div class="info-main">
 			<%@ include file="page/gradu-sidemenu.jsp" %>
 			<div class="info-right">
@@ -42,16 +42,16 @@
 				2. 박사과정 : 전공선택 36학점<br/>
 				</p>
 				<p><strong>타계열전공소지자의 추가이수과목-석사</strong><br/>
-					(1) 석사과정 : 학사 혹은 석사 전공과목 중 12학점 이상 추가 이수<br/>
-					* 단 유사 전공 학위 소지자의 경우, 주임 교수의 재량으로 지도 교수와의 협의 하에 추가이수
+					<span>(1) 석사과정 : 학사 혹은 석사 전공과목 중 12학점 이상 추가 이수</span><br/>
+					<span style="color:#b72e3e">* 단 유사 전공 학위 소지자의 경우, 주임 교수의 재량으로 지도 교수와의 협의 하에 추가이수
 과목의 학점을 감할 수 있다. 수강 교과목은 교과과정표 중에서 주임교수가 해당학생의 지도
-교수와 협의하여 결정한다.(학부/대학원 교과과정표 참조)<br/>
+교수와 협의하여 결정한다.(학부/대학원 교과과정표 참조)</span><br/>
 				</p>
 				<p><strong>타계열전공소지자의 추가이수과목-박사</strong><br/>
-				 (2) 박사과정 : 석사과정 전공과목 12학점 이상 이수<br/>
-				 * 단 유사 전공 학위 소지자의 경우, 주임 교수의 재량으로 지도 교수와의 협의 하에 추가이수
+				 <span>(2) 박사과정 : 석사과정 전공과목 12학점 이상 이수</span><br/>
+				<span style="color:#b72e3e"> * 단 유사 전공 학위 소지자의 경우, 주임 교수의 재량으로 지도 교수와의 협의 하에 추가이수
 과목의 학점을 감할 수 있다. 수강 교과목은 교과과정표 중에서 주임교수가 해당학생의 지도
-교수와 협의하여 결정한다.(학부/대학원 교과과정표 참조)<br/>
+교수와 협의하여 결정한다.(학부/대학원 교과과정표 참조)</span><br/>
 				 </p>
 				 	<p><strong>타계열전공소지자의 추가이수과목</strong><br/>
 				 	1. 석사과정 : 공통 영역, 2개 트랙 (소프트웨어 생산기술과 미디어 처리 및 통신기술) 의 교과목 중
@@ -89,18 +89,19 @@
 	   		"데이터베이스의 전반적인 설계 이론, 특히 관계형 데이터베이스의 설계에 관련된 이론 및 그에 따른 정규화, 함수 종속 등의 각종 기법들에 대해 강의한다."};	
 	%>
 	<div class="deptinfo-main">
-		<nav class="contents-nav">
-			<ul>
-				<li><a href="index.jsp"><img src="resources/img/info/navhome.png"></a></li>
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="#">대학원 소개</a></li>
 				<li><a href="#">교과과목</a></li>
 			</ul>
-		</nav>
+		</div>
 		<div class="info-main">
 			<%@ include file="page/gradu-sidemenu.jsp" %>
 			<div class="info-right">
 				<h1 class="dept-content-title">교과과목</h1>
 				<p><strong>컴퓨터공학과 대학원 교과과목</strong><br/>
-					<table border="1">
+					<table>
 						<tr class="verti-tr">
 							<td class="table-title">교과코드</td>
 							<td class="table-title">교과목명</td>
@@ -110,7 +111,7 @@
 						<tr>
 							<td><%= code[i] %></td>
 							<td><%= name[i] %></td>
-							<td><%= outline[i] %></td>
+							<td class="td-last"><%= outline[i] %></td>
 						</tr>
 						<% } %>
 					</table>

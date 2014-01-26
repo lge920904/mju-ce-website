@@ -6,22 +6,22 @@
 		<nav class="ct-cf">
 			<ul>
 				<li><a href="deptinfo.jsp?sub=outline">학과 소개</a></li>
-				<li><a href="deptinfo.jsp?sub=outline">교수 소개</a></li>
-				<li><a href="deptinfo.jsp?sub=outline">교육 목표</a></li>
-				<li><a href="deptinfo.jsp?sub=outline">찾아오시는 길</a></li>
+				<li><a href="deptinfo.jsp?sub=professor">교수 소개</a></li>
+				<li><a href="deptinfo.jsp?sub=education">교육 목표</a></li>
+				<li><a href="deptinfo.jsp?sub=location">찾아오시는 길</a></li>
 			</ul>
 			<ul>
-				<li><a href="deptinfo.jsp?sub=outline">대학원 소개</a></li>
-				<li><a href="deptinfo.jsp?sub=outline">연구 분야</a></li>
-				<li><a href="deptinfo.jsp?sub=outline">심화 전공</a></li>
+				<li><a href="garduinfo.jsp?sub=outline">대학원 소개</a></li>
+				<li><a href="garduinfo.jsp?sub=major">교과 과목</a></li>
 			</ul>
 			<ul>
-				<li><a href="deptinfo.jsp?sub=outline">공학 인증</a></li>
-				<li><a href="deptinfo.jsp?sub=outline">기초 전공</a></li>
+				<li><a href="abeek.jsp?sub=outline">공학 인증 개요</a></li>
+				<li><a href="abeek.jsp?sub=outline">도입 목적 및 혜택</a></li>
+				<li><a href="abeek.jsp?sub=outline">인증기준</a></li>
 			</ul>
 			<ul>
-				<li><a href="deptinfo.jsp?sub=outline">공지 사항</a></li>
-				<li><a href="deptinfo.jsp?sub=outline">학과 일정</a></li>
+				<li><a href="notice.jsp?sub=outline">공지 사항</a></li>
+				<li><a href="notice.jsp?sub=schedule">학과 일정</a></li>
 			</ul>
 		</nav>
 		<div class="ct-items ct-cf">
