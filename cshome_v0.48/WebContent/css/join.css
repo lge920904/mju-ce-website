@@ -24,7 +24,6 @@
 	text-indent: -10000px;
 }
 
-
 .ct-container .ct-inner-contents .ct-container-nav ul li.current{
 	background-color : #ff5150;	
 }
@@ -156,7 +155,7 @@
 .ct-inner-contents .ct-inner-left-contents .left-desc span{
 	display : block;
 	font-size:13pt;
-	text-align:right;
+	text-align:center;
 }
 
 .ct-inner-contents .ct-inner-right-contents {
@@ -165,6 +164,7 @@
 	float:left;
 	border-left : 2px solid #30abd5;
 }
+
 .input-info {
 	width: 520px;
 	height: 50px;

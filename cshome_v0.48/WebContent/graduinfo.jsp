@@ -103,13 +103,13 @@
 				<p><strong>컴퓨터공학과 대학원 교과과목</strong><br/>
 					<table>
 						<tr class="verti-tr">
-							<td class="table-title">교과코드</td>
+<!-- 							<td class="table-title">교과코드</td> -->
 							<td class="table-title">교과목명</td>
 							<td class="table-title">과목개요</td>
 						</tr>
 						<% for(int i=0; i<code.length; i++){ %>
 						<tr>
-							<td><%= code[i] %></td>
+<%-- 							<td><%= code[i] %></td> --%>
 							<td><%= name[i] %></td>
 							<td class="td-last"><%= outline[i] %></td>
 						</tr>

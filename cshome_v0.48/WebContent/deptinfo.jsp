@@ -110,7 +110,7 @@
 		<div class="contents-breadcrumb">
 			<ul class="content-crumbs">
 				<li><a href="index.jsp">Home</a></li>
-				<li><a href="deptinfo.jsp">학과소개</a></li>
+				<li><a href="deptinfo.jsp?sub=outline">학과소개</a></li>
 				<li><a href="#">교수소개</a></li>
 			</ul>
 		</div>
@@ -148,7 +148,7 @@
 		<div class="contents-breadcrumb">
 			<ul class="content-crumbs">
 				<li><a href="index.jsp">Home</a></li>
-				<li><a href="deptinfo.jsp">학과소개</a></li>
+				<li><a href="deptinfo.jsp?sub=outline">학과소개</a></li>
 				<li><a href="#">교육목표</a></li>
 			</ul>
 		</div>
@@ -199,7 +199,7 @@
 		<div class="contents-breadcrumb">
 			<ul class="content-crumbs">
 				<li><a href="index.jsp">Home</a></li>
-				<li><a href="#">학과소개</a></li>
+				<li><a href="deptinfo.jsp?sub=outline">학과소개</a></li>
 				<li><a href="#">찾아오시는 길</a></li>
 			</ul>
 		</div>

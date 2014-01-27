@@ -6,14 +6,14 @@
 <!--[if IE 8 ]><html dir="ltr" lang="en-US" class="no-js ie ie8 lte8 lte9"><![endif]-->
 <!--[if IE 9 ]><html dir="ltr" lang="en-US" class="no-js ie ie9 lte9"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<html dir="ltr" lang="en-US">
+
 <!--<![endif]-->
 <head>
 
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ëªì§ëíêµ ì»´í¨í°ê³µíê³¼</title>
+<title>명지대학교 컴퓨터공학과</title>
 <link rel="stylesheet" type="text/css" href="css/default.css" />
 <link rel="stylesheet" type="text/css" media="print" href="css/user.css" />
 <link rel="stylesheet" type="text/css" href="css/schedule/default.css" />
@@ -35,19 +35,18 @@
 </head>
 <body>
 	<div class="ct-container">
-		<%@ include file="page/header.jsp" %>
+		<%@ include file="page/header.jsp" %>	
 		<div class="content">
 			<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top">
 				<h3>Schedule</h3>
-
-				<a href="#">ì»´í¨í°ê³µíê³¼ ì¼ì </a> <a href="#">ëªì§ëíêµ íì¬ ì¼ì </a> <a href="#">íì ëí
-					ì¼ì </a> <a href="#">íìí ì¼ì </a>
+				<a href="#">컴퓨터공학과 일정</a> <a href="#">명지대학교 학사 일정</a> <a href="#">학술대회
+					일정</a> <a href="#">학생회 일정</a>
 			</nav>
 			<div class="main">
 				<ul class="cbp_tmtimeline">
 					<li>
 						<div class="cbp_calender">
-						<p>2014ë 3ì</p>
+						<p>2014년 3월</p>
 							<table class="bordered">
 								<thead>
 									<tr>
@@ -110,15 +109,15 @@
 						</div>
 					<div class="cbp_summary"></div>
 						<div class="cbp_tmlabel">
-							<h2>[ì»´í¨í°ê³µíê³¼] ìê°ì ì²­ë³ê²½</h2>
-							<p>ê¸°ê° : 2014-3-15(ì) ~ 2014-3-27(ì)</p>
-							<p>ì¥ì : Myiweb</p>
-							<p>ê¸°í : ë³ê²½ê°ë¥ ê¸°ê°</p>
+							<h2>[컴퓨터공학과] 수강신청변경</h2>
+							<p>기간 : 2014-3-15(월) ~ 2014-3-27(수)</p>
+							<p>장소 : Myiweb</p>
+							<p>기타 : 변경가능 기간</p>
 						</div>						
 					</li>
 					<li>
 					<div class="cbp_calender">
-						<p>2014ë 3ì</p>
+						<p>2014년 3월</p>
 							<table class="bordered">
 								<thead>
 									<tr>
@@ -181,15 +180,15 @@
 						</div>
 					<div class="cbp_summary"></div>
 						<div class="cbp_tmlabel">
-							<h2>[íìíê³µì§] 2014íëë 1íê¸° ì ììíìí</h2>
-							<p>ê¸°ê° : 2014-3-16(í)</p>
-							<p>ì¥ì : 5ê³µíê´ 5555í¸</p>
-							<p>íë¹ : 10ë§ì</p>
+							<h2>[학생회공지] 2014학년도 1학기 신입생환영회</h2>
+							<p>기간 : 2014-3-16(화)</p>
+							<p>장소 : 5공학관 5555호</p>
+							<p>회비 : 10만원</p>
 						</div>
 					</li>
 					<li>
 					<div class="cbp_calender">
-						<p>2014ë 3ì</p>
+						<p>2014년 3월</p>
 							<table class="bordered">
 								<thead>
 									<tr>
@@ -252,14 +251,14 @@
 						</div>
 						<div class="cbp_summary"></div>
 						<div class="cbp_tmlabel">
-							<h2>[ì»´í¨í°ê³µíê³¼] ìê°ì ì²­ë³ê²½</h2>
-							<p>ê¸°ê° : 2014-3-15(ì) ~ 2014-3-27(ì)</p>
-							<p>ì¥ì : Myiweb</p>
-							<p>ê¸°í : ë³ê²½ê°ë¥ ê¸°ê°</p>
+							<h2>[컴퓨터공학과] 수강신청변경</h2>
+							<p>기간 : 2014-3-15(월) ~ 2014-3-27(수)</p>
+							<p>장소 : Myiweb</p>
+							<p>기타 : 변경가능 기간</p>
 						</div></li>
 					<li>
 					<div class="cbp_calender">
-						<p>2014ë 3ì</p>
+						<p>2014년 3월</p>
 							<table class="bordered">
 								<thead>
 									<tr>
@@ -322,14 +321,14 @@
 						</div>
 						<div class="cbp_summary"></div>
 						<div class="cbp_tmlabel">
-							<h2>[ì»´í¨í°ê³µíê³¼] ìê°ì ì²­ë³ê²½</h2>
-							<p>ê¸°ê° : 2014-3-15(ì) ~ 2014-3-27(ì)</p>
-							<p>ì¥ì : Myiweb</p>
-							<p>ê¸°í : ë³ê²½ê°ë¥ ê¸°ê°</p>
+							<h2>[컴퓨터공학과] 수강신청변경</h2>
+							<p>기간 : 2014-3-15(월) ~ 2014-3-27(수)</p>
+							<p>장소 : Myiweb</p>
+							<p>기타 : 변경가능 기간</p>
 						</div></li>
 					<li>
 					<div class="cbp_calender">
-						<p>2014ë 3ì</p>
+						<p>2014년 3월</p>
 							<table class="bordered">
 								<thead>
 									<tr>
@@ -392,14 +391,14 @@
 						</div>
 						<div class="cbp_summary"></div>
 						<div class="cbp_tmlabel">
-							<h2>[ì»´í¨í°ê³µíê³¼] ìê°ì ì²­ë³ê²½</h2>
-							<p>ê¸°ê° : 2014-3-15(ì) ~ 2014-3-27(ì)</p>
-							<p>ì¥ì : Myiweb</p>
-							<p>ê¸°í : ë³ê²½ê°ë¥ ê¸°ê°</p>
+							<h2>[컴퓨터공학과] 수강신청변경</h2>
+							<p>기간 : 2014-3-15(월) ~ 2014-3-27(수)</p>
+							<p>장소 : Myiweb</p>
+							<p>기타 : 변경가능 기간</p>
 						</div></li>
 					<li>
 					<div class="cbp_calender">
-						<p>2014ë 3ì</p>
+						<p>2014년 3월</p>
 							<table class="bordered">
 								<thead>
 									<tr>
@@ -462,11 +461,10 @@
 						</div>
 						<div class="cbp_summary"></div>
 						<div class="cbp_tmlabel">
-							<h2>[ì»´í¨í°ê³µíê³¼] ìê°ì ì²­ë³ê²½</h2>
-							<p>ê¸°ê° : 2014-3-15(ì) ~ 2014-3-27(ì)</p>
-							<p>ì¥ì : Myiweb</p>
-							<p>ê¸°í : ë³ê²½ê°ë¥ ê¸°ê°</p>
-
+							<h2>[컴퓨터공학과] 수강신청변경</h2>
+							<p>기간 : 2014-3-15(월) ~ 2014-3-27(수)</p>
+							<p>장소 : Myiweb</p>
+							<p>기타 : 변경가능 기간</p>
 						</div></li>
 				</ul>
 			</div>

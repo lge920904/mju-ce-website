@@ -35,14 +35,14 @@
 <div class="ct-container">
 	<%@ include file="page/header.jsp" %>
 	<div class="deptinfo-main">
-		<nav class="contents-nav">
-			<ul>
-				<li><a href="index.jsp"><img src="resources/img/info/navhome.png"></a></li>
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
 				<li><a href="deptinfo.jsp">학과소개</a></li>
-				<li><a href="ProfessorInfoServlet">교수소개</a></li>
-				<li><a href="#"><%=name %></a></li>
+				<li><a href="#">교수소개</a></li>
+				<li><a href="#">상세 교수소개</a></li>
 			</ul>
-		</nav>
+		</div>
 		<div class="info-main">
 			<div class="info-right">
 				<h1 class="content-title"><%=name %></h1>

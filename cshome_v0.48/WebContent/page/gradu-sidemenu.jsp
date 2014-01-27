@@ -59,9 +59,17 @@
 		</li>
 		<li>
 			<div class="info-menu-content">
-				<a href="graduinfo.jsp?sub=outline">
-					<strong class="info-menu-main">학과 내규</strong>
-					<span class="info-menu-sub">Dept. Rule</span>
+				<a href="#">
+					<strong class="info-menu-main">대학원 소개</strong>
+					<span class="info-menu-sub">-</span>
+				</a>
+			</div>
+		</li>
+		<li>
+			<div class="info-menu-content">
+				<a href="#">
+					<strong class="info-menu-main">연구실 소개</strong>
+					<span class="info-menu-sub">-</span>
 				</a>
 			</div>
 		</li>
@@ -70,6 +78,14 @@
 				<a href="graduinfo.jsp?sub=major">
 					<strong class="info-menu-main">교과 과목</strong>
 					<span class="info-menu-sub">Dept. Major</span>
+				</a>
+			</div>
+		</li>
+		<li>
+			<div class="info-menu-content">
+				<a href="graduinfo.jsp?sub=outline">
+					<strong class="info-menu-main">학과 내규</strong>
+					<span class="info-menu-sub">Dept. Rule</span>
 				</a>
 			</div>
 		</li>

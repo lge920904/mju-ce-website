@@ -171,7 +171,7 @@
 .info-right{
    width: 73%;
    margin: 0 0 0 2%;
-   float: left;
+   float: right;
    background: #fff;
    box-sizing: border-box;
 }
@@ -263,7 +263,7 @@
 .prof-info{
 	width: 100%;
 	font-family: NanumBarunGothic;
-	padding: 2%;
+	padding: 2% 0;
 /* 	border-top: 1px solid #f4f4f4; */
 	border-top: 1px solid #888;
 	overflow: hidden;
@@ -330,7 +330,7 @@
 }
 .prof-info .right{
 	border: none;
-	width: 50%;
+	width: 30%;
 }
 .info-contents li a{
 	color:#47a3da;
@@ -455,7 +455,7 @@
 }
 
 .location-img{
-	width: 100%;
+	width: 90%;
 	padding: 1% 5%;
 	display: block;
 }
@@ -465,7 +465,8 @@
 	height: auto;
 	overflow: hidden;
 /* 	border-bottom: 1px solid #888; */
-	padding: 0 3% 3% 0%;
+/* 	padding: 0 3% 3% 0%; */
+	padding-bottom: 2%;
 	box-shadow: 5px 5px 5px #888;
 }
 

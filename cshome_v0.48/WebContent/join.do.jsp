@@ -26,17 +26,17 @@
 		<div class="ct-inner-whole">
 			<div class="ct-inner-left-contents">
 					<div class="left-desc">
+						<strong>열정이 있는 명지대학교 컴퓨터공학과입니다.<br/></strong>
 						<img src="resources/join_img/frame.PNG"><br/><br/>
 						<strong>미래 인재 양성</strong><br/>
 						<span>모바일, 컴퓨터, 멀티미디어 등 기술의 발전에 의한<br/><br/>
 						변화에 중추적인 역할을 담당할 전문적인 인재,<br/><br/>
 						산업 현장에서 바로 활용할 수 있는 인재를 양성하고 있습니다.<br/><br/></span>
-						<br/><br/>
+						<br/>
 						<strong>성공을 위한 발판</strong><br/>
 						<span>좋은 환경과 좋은 교수님들이 계신 컴퓨터공학과,<br/><br/>
 						당신의 재능을 이 곳에서 펼칠 수 있도록 <br/><br/>
 						당신의 발판이 되겠습니다.<br/><br/></span><br/><br/>
-						<strong>열정이 있는 명지대학교 <b>컴퓨터공학과</b>입니다.<br/></strong>
 					</div>
 			</div>
 			<div class="ct-form ct-inner-right-contents">
