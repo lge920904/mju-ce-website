@@ -116,7 +116,7 @@
 			</div>
 		</div>
 	</div>
-	<% }else if(sub.equals("major")){ 
+	<% }else if(sub.equals("gradu-major")){ 
 		 String[] code = {"컴공1701", "컴공1702", "컴공1704", "컴공1706", "컴공1711"};
 	   	String[] name = {"프로그래밍 언어 특론 (Special topics in Programming Language)", "운영체제 특론 (Special topics in Operating System)", "고성능 컴퓨터 구조 (Advanced Computer Architecture)", "알고리즘 (Algorithm)", "데이터베이스 설계 특론 (Special Topics in Database Design)"};
 	   	String[] outline = {"여러 가지 고급 프로그래밍 언어들의 설계 개념과 구현 기법, 그 특징들을 실존하는 프로그래밍 언어들을 가지고 예를 들어가며 설명한다. 또한 이런 기본 개념들을 컴퓨터에서 이용되는 자료, 이 자료들을 다루는데 필요한 연산, 순서제어, 자료제어, 기억장소 할당 등에 관해 연구한다.",	
