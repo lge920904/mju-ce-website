@@ -199,7 +199,26 @@
 			</div>
 		</div>
 	</div>
-	<%} %>
+	<%} else if(sub.equals("portfolio")){%>
+	<div class="deptinfo-main">
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="#">공학인증</a></li>
+				<li><a href="#">포트폴리오</a></li>
+			</ul>
+		</div>
+		<div class="info-main">
+			<%@ include file="page/abeek-sidemenu.jsp" %>
+			<div class="info-right">
+				<h1 class="dept-content-title">포트폴리오</h1>
+				<p><strong>포트폴리오</strong><br/>
+					포트폴리오
+				</p>
+			</div>
+		</div>
+	</div>
+	<% } %>
 	<%@ include file="page/footer.jsp" %>
 </div>
 </body>

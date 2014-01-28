@@ -194,6 +194,82 @@
 			</div>
 		</div>
 	</div>
+	<% }else if(sub.equals("educationloadmap")) { %>
+	<div class="deptinfo-main">
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="deptinfo.jsp?sub=outline">학과소개</a></li>
+				<lI><a href="#">교과과정로드맵</a></lI>
+			</ul>
+		</div>
+		<div class="info-main">
+			<%@ include file="page/dept-sidemenu.jsp" %>
+			<div class="info-right">
+				<h1 class="dept-content-title">교과과정로드맵</h1>
+				<p><strong>교과과정로드맵</strong><br/>
+					교과과정로드맵
+				</p>
+			</div>
+		</div>
+	</div>
+	<% }else if(sub.equals("dept-event")) { %>
+	<div class="deptinfo-main">
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="deptinfo.jsp?sub=outline">학과소개</a></li>
+				<lI><a href="#">학과행사</a></lI>
+			</ul>
+		</div>
+		<div class="info-main">
+			<%@ include file="page/dept-sidemenu.jsp" %>
+			<div class="info-right">
+				<h1 class="dept-content-title">학과행사</h1>
+				<p><strong>학과행사</strong><br/>
+					학과행사
+				</p>
+			</div>
+		</div>
+	</div>
+	<% }else if(sub.equals("admissions")) { %>
+	<div class="deptinfo-main">
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="deptinfo.jsp?sub=outline">학과소개</a></li>
+				<lI><a href="#">입학안내</a></lI>
+			</ul>
+		</div>
+		<div class="info-main">
+			<%@ include file="page/dept-sidemenu.jsp" %>
+			<div class="info-right">
+				<h1 class="dept-content-title">입학안내</h1>
+				<p><strong>입학안내</strong><br/>
+					입학안내
+				</p>
+			</div>
+		</div>
+	</div>
+	<% }else if(sub.equals("scholarships")) { %>
+	<div class="deptinfo-main">
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="deptinfo.jsp?sub=outline">학과소개</a></li>
+				<lI><a href="#">장학제도</a></lI>
+			</ul>
+		</div>
+		<div class="info-main">
+			<%@ include file="page/dept-sidemenu.jsp" %>
+			<div class="info-right">
+				<h1 class="dept-content-title">장학제도</h1>
+				<p><strong>장학제도</strong><br/>
+					장학제도
+				</p>
+			</div>
+		</div>
+	</div>
 	<% }else if(sub.equals("location")){ %>
 	<div class="deptinfo-main">
 		<div class="contents-breadcrumb">

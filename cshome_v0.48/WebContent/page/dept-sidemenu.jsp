@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="kr.ac.mju.cs.bean.User"%>
+    pageEncoding="UTF-8" import="kr.ac.mju.cs.bean.User, kr.ac.mju.cs.bean.MenuConstants" %>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type='text/javascript' src='js/userscripts.js?ver=3.7.1'></script>
 <script type='text/javascript' src='js/jquery.js?ver=1.10.2'></script>
 <script type='text/javascript' src='js/jquery-migrate.min.js?ver=1.2.1'></script>
 <script type="text/javascript" src="js/modernizr.custom.70736.js"></script>
+
 <div class="info-left">
 	<div class="ct-sidemenu-ads">
 		<div class="ct-ads-info" style="margin-top: 10px;">
@@ -57,38 +58,16 @@
 				<span>About.</span>
 			</div>
 		</li>
+		<% for(MenuConstants.DEPTMENU mc : MenuConstants.DEPTMENU.values()){ %>
 		<li>
 			<div class="info-menu-content">
-				<a href="deptinfo.jsp?sub=outline">
-					<strong class="info-menu-main">학과 소개</strong>
-					<span class="info-menu-sub">Dept. Introduction</span>
+				<a href="deptinfo.jsp?sub=<%= mc.getSubAction()%>">
+					<strong class="info-menu-main"><%= mc.getSubMenuName()%></strong>
+					<span class="info-menu-sub"><%= mc.getSubMenuDesc() %></span>
 				</a>
 			</div>
 		</li>
-		<li>
-			<div class="info-menu-content">
-				<a href="deptinfo.jsp?sub=professor">
-					<strong class="info-menu-main">교수 소개</strong>
-					<span class="info-menu-sub">Professor Introduction</span>
-				</a>
-			</div>
-		</li>
-		<li>
-			<div class="info-menu-content">
-				<a href="deptinfo.jsp?sub=education">
-					<strong class="info-menu-main">교육 목표</strong>
-					<span class="info-menu-sub">Curriculum</span>
-				</a>
-			</div>
-		</li>
-		<li>
-			<div class="info-menu-content">
-				<a href="deptinfo.jsp?sub=location">
-					<strong class="info-menu-main">찾아오시는 길</strong>
-					<span class="info-menu-sub">Location Information</span>
-				</a>
-			</div>
-		</li>
+		<% } %>
 	</ul>
 	</div>
 </div>

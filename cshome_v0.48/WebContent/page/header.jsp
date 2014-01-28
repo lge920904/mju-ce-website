@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"  import="kr.ac.mju.cs.bean.MenuConstants" %>
 <header class="ct-header">
 	<div class="ct-inner ct-cf">
 		<h1 class="ct-branding">
@@ -9,11 +9,9 @@
 		<div class="ct-nav-wrapper">
 			<nav class="ct-nav-main">
 				<ul>
-					<li><a href="deptinfo.jsp?sub=outline">학과 소개</a></li>
-					<li><a href="graduinfo.jsp?sub=outline">대학원 소개</a></li>
-					<li><a href="abeek.jsp?sub=outline">공학 인증</a></li>
-					<li><a href="notice.jsp?sub=outline">공지 사항</a></li>
-					<li><a href="#">커뮤니티</a></li>
+				<% for(MenuConstants.HOMEMENU mc : MenuConstants.HOMEMENU.values()) { %>
+					<li><a href="<%= mc.getMenuUrl() %>"><%= mc.getMenuName() %></a></li>
+				<% } %>
 				</ul>
 			</nav>
 		</div>

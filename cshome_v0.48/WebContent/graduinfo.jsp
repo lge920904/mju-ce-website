@@ -23,6 +23,43 @@
 			<ul class="content-crumbs">
 				<li><a href="index.jsp">Home</a></li>
 				<li><a href="#">대학원 소개</a></li>
+			</ul>
+		</div>
+		<div class="info-main">
+			<%@ include file="page/gradu-sidemenu.jsp" %>
+			<div class="info-right">
+				<h1 class="dept-content-title">대학원 소개</h1>
+				<p><strong>대학원 소개</strong><br/>
+					대학원 소개 
+				</p>
+			</div>
+		</div>
+	</div>
+	<% }else if(sub.equals("laboratory")) { %>
+	<div class="deptinfo-main">
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="#">대학원 소개</a></li>
+				<lI><a href="#">연구실 소개</a></lI>
+			</ul>
+		</div>
+		<div class="info-main">
+			<%@ include file="page/gradu-sidemenu.jsp" %>
+			<div class="info-right">
+				<h1 class="dept-content-title">연구실 소개</h1>
+				<p><strong>연구실 소개</strong><br/>
+					연구실 소개 
+				</p>
+			</div>
+		</div>
+	</div>
+	<% }else if(sub.equals("rule")){ %>
+	<div class="deptinfo-main">
+		<div class="contents-breadcrumb">
+			<ul class="content-crumbs">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="#">대학원 소개</a></li>
 				<li><a href="#">학과내규</a></li>
 			</ul>
 		</div>
