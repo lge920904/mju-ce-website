@@ -501,6 +501,106 @@
 	font-size: 13pt;
 }
 
+
+/* schedule */
+
+.cbp-spmenu {	
+	margin :0 auto;
+	text-align: center;	
+}
+
+.cbp-spmenu h3 {
+	color: #afdefa;
+	font-size: 1.7em;
+	margin: 0;
+	font-weight: 300;
+	background: #0d77b6;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+.cbp-spmenu a:hover {
+	background: #258ecd;
+	color:#fff;
+}
+
+.cbp-spmenu a:active {
+	background: #afdefa;
+	color: #47a3da;
+}
+
+.cbp-spmenu-horizontal {
+	width:800px;
+	height: 30px;
+	left: 0;
+	line-height: 35px;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 40px;
+	width: 230px;
+	float: left;
+	border: 1px solid #258ecd;
+}
+
+.cbp-spmenu-horizontal a {
+	font-family: NanumBarunGothic;
+	text-align: center;
+	vertical-align: middle;
+	color: #47a3da;	
+	float: left;
+	width: 180x;
+	height:30px;
+	border: 1px solid #258ecd;
+	background-color: #fff;
+}
+
+.content nav {
+	margin:0 auto;
+}
+
+.cbp-month a {
+	width: 82px;
+}
+
+.cbp-month a:hover {
+	color:black;
+}
+@media screen and (max-width: 55.1875em){
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+}
+
+.cbp_calender {
+	width: 300px;
+	height: 200px;
+	float: right;
+	margin-right: 10px;
+	padding-top: 10px;
+}
+
+.cbp_calender p{
+	text-align: center;
+	font-weight: 18px;
+	margin-bottom: 5px;
+	color: black;
+}
+
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;    
+	text-align: center;
+}
+
+/* end of schedule */
 @media screen and (max-width: 1124px) {
 	.info-left{
 		width: 80%;
